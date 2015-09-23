@@ -1,20 +1,12 @@
 ﻿<Properties StartupItem="BattleShips.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\Aidas\Documents\Git\battleships\src\UtilityFunctions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\DeploymentController.cs">
     <Files>
       <File FileName="src\Model\AIPlayer.cs" Line="1" Column="1" />
       <File FileName="src\Model\AIHardPlayer.cs" Line="1" Column="1" />
       <File FileName="src\Model\AIMediumPlayer.cs" Line="1" Column="1" />
-      <File FileName="src\GameController.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Aidas\Documents\Git\battleships\src\DeploymentController.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Aidas\Documents\Git\battleships\src\DiscoveryController.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Aidas\Documents\Git\battleships\src\EndingGameController.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Aidas\Documents\Git\battleships\src\GameLogic.cs" Line="23" Column="2" />
-      <File FileName="c:\Users\Aidas\Documents\Git\battleships\src\GameResources.cs" Line="312" Column="1" />
-      <File FileName="c:\Users\Aidas\Documents\Git\battleships\src\GameState.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Aidas\Documents\Git\battleships\src\HighScoreController.cs" Line="203" Column="19" />
-      <File FileName="c:\Users\Aidas\Documents\Git\battleships\src\MenuController.cs" Line="318" Column="4" />
-      <File FileName="c:\Users\Aidas\Documents\Git\battleships\src\UtilityFunctions.cs" Line="315" Column="32" />
+      <File FileName="src\GameController.cs" Line="17" Column="2" />
+      <File FileName="src\DeploymentController.cs" Line="102" Column="74" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
