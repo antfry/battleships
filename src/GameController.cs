@@ -156,8 +156,10 @@ public static class GameController
 
 		if (isHuman) {
 			UtilityFunctions.Message = "You " + result.ToString();
+			UtilityFunctions.MessageTurn = "Your Turn!";
 		} else {
 			UtilityFunctions.Message = "The AI " + result.ToString();
+			UtilityFunctions.MessageTurn = "AI Turn!";
 		}
 
 		switch (result.Value) {
