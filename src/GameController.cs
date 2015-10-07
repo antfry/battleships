@@ -82,8 +82,9 @@ public static class GameController
 			case AIOption.Hard:
 				_ai = new AIHardPlayer(_theGame);
 				break;
+			//Default is AI Medium Player
 			default:
-				_ai = new AIHardPlayer(_theGame);
+				_ai = new AIMediumPlayer(_theGame);
 				break;
 		}
 
