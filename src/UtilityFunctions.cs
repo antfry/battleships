@@ -21,6 +21,7 @@ static class UtilityFunctions
 	public const int FIELD_HEIGHT = 418;
 
 	public const int MESSAGE_TOP = 548;
+	public const int MESSAGE_TURN = 100;
 	public const int CELL_WIDTH = 40;
 	public const int CELL_HEIGHT = 40;
 
@@ -42,6 +43,7 @@ static class UtilityFunctions
 	private static readonly Color SHIP_OUTLINE_COLOR = Color.White;
 
 	private static readonly Color MESSAGE_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
+	private static readonly Color TURN_COLOR = SwinGame.RGBAColor(2, 250, 205, 210);
 	public const int ANIMATION_CELLS = 7;
 
 	public const int FRAMES_PER_CELL = 8;
@@ -225,12 +227,24 @@ static class UtilityFunctions
 		set { _message = value; }
 	}
 
+	private static string _messageTurn;
+	/// <summary>
+	/// The message to display
+	/// </summary>
+	/// <value>The message to display</value>
+	/// <returns>The message to display</returns>
+	public static string MessageTurn {
+		get { return _messageTurn; }
+		set { _messageTurn = value; }
+	}
+
 	/// <summary>
 	/// Draws the message to the screen
 	/// </summary>
 	public static void DrawMessage()
 	{
 		SwinGame.DrawText(Message, MESSAGE_COLOR, GameResources.GameFont("Courier"), FIELD_LEFT, MESSAGE_TOP);
+		SwinGame.DrawText (MessageTurn, TURN_COLOR, GameResources.GameFont ("Courier"), FIELD_LEFT, MESSAGE_TURN);
 	}
 
 	/// <summary>

@@ -76,14 +76,18 @@ public static class GameController
 
 		//create the players
 		switch (_aiSetting) {
+			case AIOption.Easy:
+				_ai = new AIEasyPlayer(_theGame);
+				break;
 			case AIOption.Medium:
-				_ai = new AIMediumPlayer(_theGame);
+				_ai = new AIMediumPlayer(_theGame) ;
 				break;
 			case AIOption.Hard:
 				_ai = new AIHardPlayer(_theGame);
 				break;
+			//Default is AI Medium Player
 			default:
-				_ai = new AIHardPlayer(_theGame);
+				_ai = new AIMediumPlayer(_theGame);
 				break;
 		}
 
@@ -156,8 +160,10 @@ public static class GameController
 
 		if (isHuman) {
 			UtilityFunctions.Message = "You " + result.ToString();
+			UtilityFunctions.MessageTurn = "Your Turn!";
 		} else {
 			UtilityFunctions.Message = "The AI " + result.ToString();
+			UtilityFunctions.MessageTurn = "AI Turn!";
 		}
 
 		switch (result.Value) {
