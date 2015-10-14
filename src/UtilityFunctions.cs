@@ -71,6 +71,14 @@ static class UtilityFunctions
 		return result;
 	}
 
+	public static void DrawGridReference() {
+		for (int i = 1; i <= 10; i++)
+		{
+			SwinGame.DrawTextOnScreen ((i - 1).ToString(), Color.White, 323 + (42 * i), 108);
+			SwinGame.DrawTextOnScreen ((i - 1).ToString (), Color.White, 332, 98 + (42 * i));
+		}	
+	}
+
 	/// <summary>
 	/// Draws a large field using the grid and the indicated player's ships.
 	/// </summary>
@@ -81,6 +89,7 @@ static class UtilityFunctions
 	{
 		DrawCustomField(grid, thePlayer, false, showShips, FIELD_LEFT, FIELD_TOP, FIELD_WIDTH, FIELD_HEIGHT, CELL_WIDTH, CELL_HEIGHT,
 		CELL_GAP);
+		DrawGridReference ();
 	}
 
 	/// <summary>
@@ -127,7 +136,6 @@ static class UtilityFunctions
 		//Draw the grid
 		for (int row = 0; row <= 9; row++) {
 			rowTop = top + (cellGap + cellHeight) * row;
-
 			for (int col = 0; col <= 9; col++) {
 				colLeft = left + (cellGap + cellWidth) * col;
 
