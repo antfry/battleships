@@ -40,6 +40,10 @@ public class Player : IEnumerable<Ship>
 		set { _enemyGrid = value; }
 	}
 
+	/// <summary>
+	/// Initializes a new instance of the <see cref="Player"/> class.
+	/// </summary>
+	/// <param name="controller">Controller.</param>
 	public Player(BattleShipsGame controller)
 	{
 		_game = controller;
@@ -105,6 +109,10 @@ public class Player : IEnumerable<Ship>
 		get { return _shots; }
 	}
 
+	/// <summary>
+	/// Gets the hits.
+	/// </summary>
+	/// <value>The hits.</value>
 	public int Hits {
 		get { return _hits; }
 	}
@@ -118,6 +126,10 @@ public class Player : IEnumerable<Ship>
 		get { return _misses; }
 	}
 
+	/// <summary>
+	/// Gets the score.
+	/// </summary>
+	/// <value>The score.</value>
 	public int Score {
 		get {
 			if (IsDestroyed) {

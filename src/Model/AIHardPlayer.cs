@@ -91,7 +91,10 @@ public class AIHardPlayer : AIPlayer
 	private AIStates _CurrentState = AIStates.Searching;
 	private Stack<Target> _Targets = new Stack<Target>();
 	private List<Target> _LastHit = new List<Target>();
-
+	/// <summary>
+	/// Initalizes a new instance of the <see cref="BattleShips.AIHardPlayer"/> class.
+	/// </summary>
+	/// <param name="name="game">Game.<param name="param></param>">/ 
 	private Target _CurrentTarget;
 	public AIHardPlayer(BattleShipsGame game) : base(game)
 	{

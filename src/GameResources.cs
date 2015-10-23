@@ -293,6 +293,9 @@ public static class GameResources
 		}
 	}
 
+	/// <summary>
+	/// Fress the resources
+	/// </summary>
 	public static void FreeResources()
 	{
 		FreeFonts();
