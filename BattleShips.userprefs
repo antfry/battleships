@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="BattleShips.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Mac|x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="BattleShips.userprefs">
     <Files>
-      <File FileName="BattleShips.userprefs" Line="9" Column="64" />
+      <File FileName="BattleShips.userprefs" Line="9" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
